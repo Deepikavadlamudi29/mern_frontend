@@ -21,7 +21,7 @@ function CreatePost() {
         formData.append('email', user.email)
         formData.append('file', file)
 
-        axios.post('http://localhost:3001/create', formData)
+        axios.post('https://mernbackend-rc50.onrender.com//create', formData)
         .then(res => {
             if(res.data === "Success") {
                 window.location.href = "/"
