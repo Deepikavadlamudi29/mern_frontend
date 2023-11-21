@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', sans-serif; /* Adjust the font stack */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-image: url=('Blog\client\src\bgimg.jpg');
+
+  background-size: cover; /* Adjust the size of the background image */
+  background-position: center; /* Center the background image */
+  color: #333; /* Set a default text color */
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+code {
+  font-family: 'Courier New', monospace; /* Adjust the font stack for code */
+  font-size: 14px; /* Set a reasonable font size for code */
+  background-color: #f8f8f8; /* Set a background color for code blocks */
+  padding: 2px 4px; /* Add padding for better code block appearance */
+  border: 1px solid #ddd; /* Add a border for code blocks */
+  border-radius: 4px; /* Add rounded corners to code blocks */
+}
+/* Add a subtle box shadow to elements */
+body, .container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style links */
+a {
+  color: #007bff; /* Set link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Set a maximum width for the content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
