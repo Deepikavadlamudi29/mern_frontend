@@ -6,7 +6,7 @@ function Home() {
     const[posts, setPosts] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/getposts')
+        axios.get('https://mernbackend-rc50.onrender.com//getposts')
         .then(posts => {
           setPosts(posts.data)
         })
@@ -19,7 +19,7 @@ function Home() {
           posts.map(post => (
             <Link to={`/post/${post._id}`}className='post' key={post._id}>
             
-            <img src={`http://localhost:3001/Images/${post.file}`} alt=""/>
+            <img src={`https://mernbackend-rc50.onrender.com//Images/${post.file}`} alt=""/>
 
               <div className = 'post_text'>
                 <h2>{post.title}</h2>
