@@ -10,7 +10,7 @@ function Navbar(){
     const navigate =useNavigate()
 
     const handleLogout =() => {
-        axios.get('https://mernbackend-rc50.onrender.com//logout')
+        axios.get('https://mernbackend-rc50.onrender.com/logout')
         .then(res =>{
             if(res.data === "Success")
             navigate(0)
