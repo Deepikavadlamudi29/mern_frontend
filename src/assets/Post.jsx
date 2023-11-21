@@ -2,7 +2,7 @@ import React, { useEffect, useState ,  useContext} from 'react'
 import axios from 'axios'
 import { useNavigate, useParams} from 'react-router-dom'
 import { userContext } from '../App'
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom' 
 
 
 function Post() {
