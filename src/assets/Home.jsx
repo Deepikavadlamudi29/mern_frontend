@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function Home() {
     const[posts, setPosts] = useState([])
     useEffect(() => {
-        axios.get(https://mernbackend-rc50.onrender.com/getposts)
+        axios.get(`https://mernbackend-rc50.onrender.com/getposts`)
         .then(posts => {
           setPosts(posts.data)
         })
