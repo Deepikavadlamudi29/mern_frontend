@@ -17,7 +17,7 @@ function App() {
 
   axios.defaults.withCredentials = true;
   useEffect(() => {
-    axios.get('http://localhost:3001/')
+    axios.get('https://mernbackend-rc50.onrender.com/')
     .then(user => {
       setUser(user.data)
     })
