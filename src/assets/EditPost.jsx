@@ -18,7 +18,7 @@ function EditPost() {
         e.preventDefault()
         
         
-        axios.put('http://localhost:3001/editpost/'+id, {title,description})
+        axios.put('https://mernbackend-rc50.onrender.com//editpost/'+id, {title,description})
         .then(res => {
             if(res.data === "Success") {
                 navigate("/")
@@ -29,7 +29,7 @@ function EditPost() {
         .catch(err => console.log(err))
     }
     useEffect(() =>{
-        axios.get('http://localhost:3001/getpostbyid/')
+        axios.get('https://mernbackend-rc50.onrender.com//getpostbyid/')
         .then(result=> {
             setTitle(result.data.title)
             setDescription(result.data.description)
