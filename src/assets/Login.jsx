@@ -13,7 +13,7 @@ function Login(){
     const handleSubmit = (e) => {
 
         e.preventDefault()
-        axios.post('https://mernbackend-rc50.onrender.com//login', {email,password})
+        axios.post('https://mernbackend-rc50.onrender.com/login', {email,password})
         .then(res => {
             if(res.data === "Success") {
                 window.location.href = "/"
