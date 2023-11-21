@@ -11,12 +11,12 @@ function Post() {
     const navigate = useNavigate();
     const user = useContext(userContext)
     useEffect(() =>{
-        axios.get(`https://mernbackend-rc50.onrender.com//getpostbyid/`+id)
+        axios.get(`https://mernbackend-rc50.onrender.com/getpostbyid/`+id)
         .then(result=> setPost(result.data))
         .catch(err => console.log(err));
     },[])
     const handleDelete=(id) => {
-        axios.delete(`https://mernbackend-rc50.onrender.com//deletepost/`+id)
+        axios.delete(`https://mernbackend-rc50.onrender.com/deletepost/`+id)
         .then(result=> {
            navigate('/')
     })
@@ -27,7 +27,7 @@ function Post() {
         <div className='post_post'>
         
             
-        <img src={`https://mernbackend-rc50.onrender.com//Images/${post.file}`} alt=""/>
+        <img src={`https://mernbackend-rc50.onrender.com/Images/${post.file}`} alt=""/>
             <h1>{post.title}</h1>
             <p> {post.description}</p>
             <div>
